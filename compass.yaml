@@ -1,66 +1,60 @@
-configVersion: 1
 name: magnetic-api
-id: "ari:cloud:compass:7d7a1354-b50b-4f1e-b409-1f3c509aea99:component/910c34fb-0e18-40c8-8568-c31a5cefb046/b4bac4a5-df70-4987-b252-d018f7df915e"
+id: 'ari:cloud:compass:b72546fe-61f7-4345-8da8-91241b858af0:component/37662d7e-7eb0-4f8f-8127-0c41ba97a635/5577d9f2-797b-4cb3-8d8a-6cee7be8332a'
 description: API proxy between magnetic-web and backend services.
+configVersion: 1
 typeId: SERVICE
-ownerId: "ari:cloud:teams::team/07f3a1d7-efd4-489c-8f54-d8e19e2f3462"
+ownerId: 'ari:cloud:teams::team/bd78a626-6033-4a07-9f9b-f885c41d510c'
 fields:
   tier: 1
   lifecycle: Active
-labels:
-  - aws
-  - docker
-  - kubernetes
-  - magnetic
-  - python3
 links:
-  - name: "#magnetic"
-    type: CHAT_CHANNEL
-    url: "https://magnetsinc.slack.com/archives/C049E2AUHRC"
-  - name: "Jira"
+  - name: Jira - Mobile Dev Project
     type: PROJECT
-    url: "https://magnetsinc.atlassian.net/browse/MAG"
+    url: 'https://compass-sandbox-checkout.atlassian.net/browse/MOBL'
   - name: Architecture overview
     type: DOCUMENT
-    url: "https://magnetsinc.atlassian.net/wiki/spaces/MAGNETIC/pages/19955713/Architecture+overview"
-  - name: Runbook
+    url: 'https://compass-sandbox-checkout.atlassian.net/wiki/spaces/MD/overview'
+  - name: RB - Logstash monitoring
     type: DOCUMENT
-    url: "https://magnetsinc.atlassian.net/wiki/spaces/MAGNETIC/pages/20054017/Runbook"
-  - name: API design specs
+    url: 'https://compass-sandbox-checkout.atlassian.net/wiki/spaces/ITO/pages/852113/RB+-+Logstash+monitoring'
+  - name: Configure HTR Recognition
     type: DOCUMENT
-    url: "https://magnetsinc.atlassian.net/wiki/spaces/MAGNETIC/pages/20119553/API+design+specs"
-  - name: Endpoint contracts
-    type: DOCUMENT
-    url: "https://magnetsinc.atlassian.net/wiki/spaces/MAGNETIC/pages/20152321/Endpoint+contracts"
-  - name: Observability Dashboard
-    type: DASHBOARD
-    url: "https://app.datadoghq.com/dashboard/v43-thf-yrv/dashboard"
-  - name: On call schedule
+    url: 'https://compass-sandbox-checkout.atlassian.net/wiki/spaces/MD/pages/557163/Configure+HTR+Recognition'
+  - name: ''
     type: ON_CALL
-    url: "https://compass-magnets.app.opsgenie.com/settings/schedule/detail/1dfac1e0-2e8b-4b70-a39a-16debccf3796"
-  - name: Opsgenie service
+    url: 'https://compass-sandbox-checkout.app.opsgenie.com/settings/schedule/detail/e7946461-2eaf-4e8e-a497-058ce0290731'
+  - name: team-magnetic
+    type: CHAT_CHANNEL
+    url: 'https://oneatlassiandemogroup.slack.com/archives/C05U0S5N6EQ'
+  - name: Opsgenie Service
     type: OTHER_LINK
-    url: "https://compass-magnets.app.opsgenie.com/service/788fee36-b6c0-4ef3-9d01-f38890574e6f/status"
-  - name: LaunchDarkly flags
-    type: OTHER_LINK
-    url: "https://app.launchdarkly.com/default/production/features?state=live&tag=compass.magnetic-api"
-customFields:
-  - name: "Data encrypted in transit?"
-    type: text
-    value: yes
-  - name: "Data encrypted at rest?"
-    type: text
-    value: n/a
-  - name: "Last security review"
-    type: text
-    value: "2023-03-27"
+    url: 'https://compass-sandbox-checkout.app.opsgenie.com/service/2d24c545-34f6-4b99-8176-75abd4074269'
+  - name: ''
+    type: REPOSITORY
+    url: 'https://github.com/compass-sandbox-checkout/magnetic-api'
 relationships:
   DEPENDS_ON:
-    - "ari:cloud:compass:7d7a1354-b50b-4f1e-b409-1f3c509aea99:component/910c34fb-0e18-40c8-8568-c31a5cefb046/4e560f2b-cc3d-4735-9407-a2d494459d5e"
-    - "ari:cloud:compass:7d7a1354-b50b-4f1e-b409-1f3c509aea99:component/910c34fb-0e18-40c8-8568-c31a5cefb046/1e0b790f-2c67-409a-9b7c-3ea9ac1035df"
-    - "ari:cloud:compass:7d7a1354-b50b-4f1e-b409-1f3c509aea99:component/910c34fb-0e18-40c8-8568-c31a5cefb046/9e972f77-e6e1-41b2-8c26-d30758eb4a14"
-    - "ari:cloud:compass:7d7a1354-b50b-4f1e-b409-1f3c509aea99:component/910c34fb-0e18-40c8-8568-c31a5cefb046/b0fc76b8-1924-4cc3-bc1d-26471553bfd6"
-    - "ari:cloud:compass:7d7a1354-b50b-4f1e-b409-1f3c509aea99:component/910c34fb-0e18-40c8-8568-c31a5cefb046/8050cf30-f87e-4bc2-b4ee-91d9b7e74529"
-# Learn more about formatting compass.yml:
-# https://go.atlassian.com/compass-yml-format11
+    - 'ari:cloud:compass:b72546fe-61f7-4345-8da8-91241b858af0:component/37662d7e-7eb0-4f8f-8127-0c41ba97a635/8cc037b5-d06a-4f42-800f-93a4e6db47f9'
+    - 'ari:cloud:compass:b72546fe-61f7-4345-8da8-91241b858af0:component/37662d7e-7eb0-4f8f-8127-0c41ba97a635/bbcd0da3-e4f6-4c70-8f2f-85add0e724cb'
+    - 'ari:cloud:compass:b72546fe-61f7-4345-8da8-91241b858af0:component/37662d7e-7eb0-4f8f-8127-0c41ba97a635/5cdd39f1-0db6-429e-896e-303bde5f89fb'
+    - 'ari:cloud:compass:b72546fe-61f7-4345-8da8-91241b858af0:component/37662d7e-7eb0-4f8f-8127-0c41ba97a635/a4b82cf5-94e0-4a67-ac2f-d84f8552ea18'
+    - 'ari:cloud:compass:b72546fe-61f7-4345-8da8-91241b858af0:component/37662d7e-7eb0-4f8f-8127-0c41ba97a635/12323917-6487-4de0-bd5a-f2d021b5ff24'
+labels:
+  - api
+  - docker
+  - kubernetes
+  - magnetize
+  - python3
+customFields:
+  - name: Data encrypted at rest
+    type: text
+    value: n/a
+  - name: Data encrypted in transit
+    type: text
+    value: 'yes'
+  - name: Last security review
+    type: text
+    value: '2023-03-27'
 
+# Learn more about formatting compass.yml:
+# https://go.atlassian.com/compass-yml-format
