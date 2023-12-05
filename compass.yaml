@@ -29,7 +29,9 @@ links:
   - name: Opsgenie Service
     type: OTHER_LINK
     url: 'https://compass-sandbox-checkout.app.opsgenie.com/service/2d24c545-34f6-4b99-8176-75abd4074269'
-
+  - name: 'magnetic-api GH Repo'
+    type: REPOSITORY
+    url: 'https://github.com/compass-sandbox-checkout/magnetic-api/'
 relationships:
   DEPENDS_ON:
     - 'ari:cloud:compass:b72546fe-61f7-4345-8da8-91241b858af0:component/37662d7e-7eb0-4f8f-8127-0c41ba97a635/8cc037b5-d06a-4f42-800f-93a4e6db47f9'
